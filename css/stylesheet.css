@@ -1,5 +1,5 @@
 body{
-  background-color: #121212;
+  background-color: #1C1C1C;
 }
 text{
     font-family: "poppins-regular";
@@ -17,7 +17,7 @@ a{
 /*****ID tags****/
 
 #title {
-    background-color: #1C1C1C;
+    background-color: #121212;
     
     padding: 3% 8%;
     text-decoration-color: white;
@@ -29,6 +29,7 @@ background-color: #121212;
 padding: 3% 8%;
 contain: content;
 
+
 }
 
 #contacts{
@@ -38,7 +39,7 @@ contain: content;
 }
 #projects{
   background-color: #121212;
-  padding: 0% 8%;
+  padding: 4% 8%;
 }
 /*****class tags***/
 
@@ -68,6 +69,23 @@ color: #FAE107F2;
   border-radius: 7.5%;
   
 }
+/*******media queries***/
+@media only screen and (max-width: 868px){[class*="dope"] {width: 100%}}
+
+@media only screen and (max-width:768px){[class*="intro"] {font-size: 12px; font-weight: 200; padding-top: 0; text-align: left;}}
+@media only screen and (max-width:768px){[class*="intro-box"] {padding: 0;font-size: 12px; font-weight: 200; padding-top: 0; text-align: left;}}
+  @media only screen and (max-width: 768px){ [class*="ring-"]
+    {display: none;}
+  }
+  @media only screen and (max-width: 768px){ [class*="black-"]
+    {display: none;}
+  }
+  @media only screen and (max-width: 768px){ [classs*="project-id"] {font-size: 
+    18px;}}
+  @media only screen and (max-width: 768px){[class*="project-id-su"] {font-size: 12px;}}
+
+  @media only screen and (max-width: 768px) {[class*="contract"] {padding: 0; font-size: smaller;}}
+  
 .head{
   
   font-family: 'Poppins SemiBold';
@@ -101,8 +119,10 @@ padding-top: 80px;
   font-family: 'Poppins SemiBold';
   font-size: 18px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 18px;
   font-style: normal;
+  text-align: left;
+  
   color: rgba(255, 255, 255, 0.87);
 }
 .orb{
@@ -129,10 +149,7 @@ padding-top: 80px;
   color: rgba(255, 255, 255, 0.87);
   
 }
-.dope{
-position: relative;
-right: 50px;
- }
+
 
 .black-hole {
   border-radius: 50%;
@@ -142,8 +159,8 @@ right: 50px;
   opacity: 0.6;
   border: 420px solid rgba(250, 255, 7, 0.8);
   position: absolute;
-  right: 829.22px;
-  top:102.34px;
+  right: 869.22px;
+  top:2.34px;
   z-index: -1;
   
   
@@ -158,8 +175,8 @@ right: 50px;
  
   border: 240px solid black;
   position: absolute;
-  right: 1009.22px;
-  top:280.34px;
+  right: 1049.22px;
+  top:180.34px;
  z-index: -1;
   
   transform: rotate(13.74deg);
@@ -174,7 +191,7 @@ right: 50px;
   position: absolute;
   right: -100px;
   bottom: -120px;
-  
+  z-index: -1;
   
   transform: rotate(13.74deg);
 }
@@ -201,9 +218,8 @@ right: 50px;
   height: 300px;
   opacity: 0.5;
   border: 25px solid rgba(250, 255, 7, 0.8);
-  position: absolute;
-  left: 729.22px;
-  top:242.34px;
+  position: relative;
+  bottom: -120px;
   filter: blur(2px);
   
   transform: rotate(13.74deg);
@@ -215,22 +231,23 @@ right: 50px;
   height: 300px;
   opacity: 0.5;
   border: 25px solid rgba(250, 255, 7, 0.8);
-  position: absolute;
-  left: 823.23px;
-  top:104.83px;
+  position: relative;
+  left: 100px;
+  bottom: 350px;
   filter: blur(2px);
   transform: rotate(13.74deg);
+  z-index: -1;
 }
 .ring-3{
   border-radius: 50%;
   background-color: #121212;
-  width:300px;
-  height: 300px;
+  width:250px;
+  height: 250px;
   opacity: 0.5;
   border: 25px solid rgba(250, 255, 7, 0.2);
   position: absolute;
-  left: 829.22px;
-  top:662.34px;
+  left: 879.22px;
+  top:642.34px;
   filter: blur(2px);
   
   transform: rotate(13.74deg);
@@ -238,13 +255,13 @@ right: 50px;
 .ring-4{
   border-radius: 50%;
   background-color: #121212;
-  width:300px;
-  height: 300px;
+  width:250px;
+  height: 250px;
   opacity: 0.5;
   border: 25px solid rgba(250, 255, 7, 0.2);
   position: absolute;
   left: 983.23px;
-  top:584.83px;
+  top:504.83px;
   filter: blur(2px);
   transform: rotate(13.74deg);
 }
@@ -852,8 +869,8 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  background-color: #27272780;
+  border: 1px solid #27272780;
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
